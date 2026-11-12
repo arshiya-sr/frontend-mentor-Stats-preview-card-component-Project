@@ -1,0 +1,142 @@
+/* custom variables */
+
+:root {
+
+    /* Colors */
+
+    /* Primary */
+
+    --Navy-950: hsl(233, 47%, 7%);
+    --Navy-980: hsl(233, 88%, 10%);
+    --Blue-950: hsl(244, 37%, 16%);
+    --Purple-500: hsl(277, 64%, 61%);
+
+    /* Neutral */
+
+    --White-main: hsla(0, 0%, 100%, 0.75);
+    --White-stat: hsla(0, 0%, 100%, 0.6);
+
+    /* Basic colors */
+
+    --Black: hsl(0, 0%, 0%);
+    --White: hsl(0, 100%, 100%);
+    --White-light: hsla(0, 0%, 90%, 0.7);
+
+    --Shadow: hsla(0, 0%, 0%, 0.6);
+
+    --Gray-border: hsl(0, 74%, 79%);
+
+    /* Typography */
+
+    --font-family: 'Inter', sans-serif;
+    --font-family-heads: 'Lexend Deca', sans-serif;
+    --font-size-base: 0.9375rem;
+
+    /* sensible base for body text */
+
+    /* semantic font-size scale */
+
+    --fs-xxs: 0.7rem;
+    --fs-xs: 0.85rem;
+    --fs-sm: 1rem;
+    --fs-regul: 1.15rem;
+    --fs-md: 1.3rem;
+    --fs-lg: 1.5rem;
+    --fs-lg1: 1.7rem;
+    --fs-lg2: 2rem;
+    --fs-xl: 2.7rem;
+    --fs-xxl: 3rem;
+    --fs-3xl: 3.5rem;
+    --fs-gigantic: 5rem;
+    --fs-huge: 7rem;
+
+    /* Font weight */
+
+    --fw-lightest: 300;
+    --fw-light: 400;
+    --fw-normal: 500;
+    --fw-bold: 700;
+    --fw-dark: 900;
+
+    /* Spacing scale (rem-based for consistency)
+       Use a 8px baseline: 0.5rem (~8px), 1rem (~16px), 2rem (~32px) */
+
+    --space-xxs: 0.25rem;
+    --space-xs: 0.5rem;
+    --space-sm: 0.75rem;
+    --space-md: 1rem;
+    --space-lg: 2rem;
+    --space-xl: 3rem;
+    --space-xxl: 4rem;
+    --space-3xl: 5rem;
+    --space-huge: 8rem;
+
+    /* Border radius */
+
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 16px;
+    --radius-half: 30px;
+    --radius-huge: 60px;
+    --radius-max: 120px;
+    --radius-circle: 50%;
+}
+
+/* Fonts */
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('../fonts/Inter_18pt-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('../fonts/Inter_18pt-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Lexend Deca';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('../fonts/LexendDeca-Regular.ttf') format('truetype');
+}
+
+/* Overall styles */
+
+body {
+    font-size: var(--font-size-base);
+    font-family: var(--font-family);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+    border: 0;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--font-family-heads);
+}
+
+li {
+    list-style: none;
+}

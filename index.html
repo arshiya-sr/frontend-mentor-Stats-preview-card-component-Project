@@ -1,33 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Stats preview card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 0.6875rem; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
+
 <body>
 
-  Get insights that help your business grow.
+  <main class="main">
 
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-  experience, and overall efficiency.
+    <article class="card">
 
-  10k+ companies
-  314 templates
-  12m+ queries
+      <header class="card-header" aria-label="card header">
+        <img class="img mobile" src="./images/image-header-mobile.jpg" alt="" aria-hidden="true">
+        <img class="img desktop" src="./images/image-header-desktop.jpg" alt="" aria-hidden="true">
+      </header>
 
-  <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+      <section class="card-body">
+        <h1 class="card-title">
+          Get <strong class="marked">insights</strong> that help your business grow.
+        </h1>
+        <p class="card-text">
+          Discover the benefits of data analytics and make better decisions regarding revenue,
+          customer
+          experience, and overall efficiency.
+        </p>
+        <div class="features">
+          <div class="feature">
+            <p class="number">10k+</p>
+            <p class="label">companies</p>
+          </div>
+          <div class="feature">
+            <p class="number">314</p>
+            <p class="label">templates</p>
+          </div>
+          <div class="feature">
+            <p class="number">12m+</p>
+            <p class="label">queries</p>
+          </div>
+        </div>
+      </section>
+
+    </article>
+
+  </main>
+
+  <footer class="footer">
+    <p>Challenge by <a class="credit" rel="noopener noreferrer" target="_blank"
+        href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.</p>
+    <p>Coded by <a class="credit" rel="noopener noreferrer" target="_blank"
+        href="https://github.com/arshiya-sr">Arshiya_sr</a>.</p>
   </footer>
 </body>
+
 </html>

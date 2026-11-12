@@ -1,0 +1,27 @@
+/* Main */
+
+.main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Navy-950);
+    color: var(--White)
+}
+
+.desktop {
+    display: none;
+}
+
+/* Footer */
+
+.footer {
+    font-size: var(--fs-sm);
+    text-align: center;
+    background-color: var(--Navy-980);
+    color: var(--White)
+}
+
+.credit {
+    color: hsl(135, 71%, 57%);
+}
