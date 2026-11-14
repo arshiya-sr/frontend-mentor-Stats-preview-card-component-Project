@@ -19,7 +19,7 @@
 .card {
     background-color: var(--Blue-950);
     border-radius: var(--radius-md);
-    width: clamp(250px, 250px + 15vw, 400px);
+    width: clamp(350px, 250px + 15vw, 450px);
 }
 
 /* Card image */
@@ -48,6 +48,7 @@
     text-align: center;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .card-title {
@@ -99,4 +100,48 @@
 
 .credit {
     color: hsl(135, 71%, 57%);
+}
+
+/* Desktop layout */
+/* 60rem = 960px based on default 16px HTML Root fontsize  */
+
+@media screen and (min-width: 60rem) {
+    .card {
+        width: clamp(850px, 850px + 25vw, 1150px);
+        display: grid;
+        grid-auto-flow: column-reverse;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            'body image'
+        ;
+    }
+
+    .card-image {
+        grid-area: image;
+        border-radius: 0 var(--radius-md) var(--radius-md) 0;
+    }
+
+
+    .img {
+        width: 100%;
+        border-radius: 0 var(--radius-md) var(--radius-md) 0;
+    }
+
+    .card-body {
+        grid-area: body;
+        text-align: left;
+        align-items: flex-start;
+        padding-inline-start: var(--space-xxl);
+    }
+
+    .card-title {
+        font-size: var(--fs-xl);
+        line-height: var(--space-lg1);
+        margin-block-end: var(--space-lg);
+    }
+
+    .stats {
+        flex-direction: row;
+        margin-top: auto;
+    }
 }
