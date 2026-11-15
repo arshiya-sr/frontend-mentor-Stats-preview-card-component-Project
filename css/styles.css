@@ -56,10 +56,22 @@
     text-wrap: unset;
     margin-block-end: var(--space-md);
     line-height: 1.9rem;
+    transition: all 0.2s ease-in;
+    font-family: var(--font-family);
+    max-width: 400px;
+}
+
+.card-title:hover {
+    transform: scale(1.05);
 }
 
 .marked {
     color: var(--Purple-500);
+    transition: all 0.2s ease-in;
+}
+
+.card-title:hover .marked {
+    text-shadow: 5px 5px 7px var(--Purple-500);
 }
 
 .card-text {
@@ -77,6 +89,11 @@
 .stat {
     display: flex;
     flex-direction: column;
+    transition: all 0.2s ease-in;
+}
+
+.stat:hover {
+    transform: scale(1.05);
 }
 
 .number {
@@ -87,6 +104,7 @@
 .label {
     color: var(--White-stat);
     text-transform: uppercase;
+    font-family: var(--font-family-heads);
 }
 
 /* Footer */
@@ -127,6 +145,10 @@
         border-radius: 0 var(--radius-md) var(--radius-md) 0;
     }
 
+    .overlay {
+        border-radius: 0 var(--radius-md) var(--radius-md) 0;
+    }
+
     .card-body {
         grid-area: body;
         text-align: left;
@@ -135,13 +157,16 @@
     }
 
     .card-title {
-        font-size: var(--fs-xl);
-        line-height: var(--space-lg1);
+        font-size: 2.4rem;
+        line-height: 2.75rem;
         margin-block-end: var(--space-lg);
     }
 
     .stats {
         flex-direction: row;
         margin-top: auto;
+        width: 100%;
+        justify-content: space-between;
+        padding-inline-end: var(--space-xxl);
     }
 }
