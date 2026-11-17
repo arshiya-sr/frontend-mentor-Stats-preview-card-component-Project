@@ -117,7 +117,7 @@
 }
 
 .credit {
-    color: hsl(135, 71%, 57%);
+    color: var(--Footer-green);
 }
 
 /* Desktop layout */
@@ -127,7 +127,6 @@
     .card {
         width: clamp(850px, 850px + 25vw, 1150px);
         display: grid;
-        grid-auto-flow: column-reverse;
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
             'body image'
@@ -164,7 +163,7 @@
 
     .stats {
         flex-direction: row;
-        margin-top: auto;
+        margin-block-start: auto;
         width: 100%;
         justify-content: space-between;
         padding-inline-end: var(--space-xxl);
